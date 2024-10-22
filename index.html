@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz Time!</h1>
+    <button class="start-btn" onclick="startQuiz()">Take the Quiz</button>
+    <div class="question" style="display:none;">Question will appear here</div>
+    <div class="timer" style="display:none;">Time left: <span id="timer">15</span>s</div>
+    <div class="progress" style="display:none;">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="options" style="display:none;">
+      <button onclick="checkAnswer(0)">Option 1</button>
+      <button onclick="checkAnswer(1)">Option 2</button>
+      <button onclick="checkAnswer(2)">Option 3</button>
+      <button onclick="checkAnswer(3)">Option 4</button>
+    </div>
+    <div class="result" style="display:none;"></div>
+    <button class="retake-btn" onclick="retakeQuiz()">Retake Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
